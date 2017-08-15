@@ -1,16 +1,30 @@
 
 #choices{
 	
-	background-color: #2D414E;
-	color: #14a509;
+	background-color: #a0e2e5;
+	color: #ffffff;
 	font-weight: bolder;
-	border:1px solid #a0e2e5;
+	border-radius: 0 0 10px 10px;
 	border-top: none;
 }
 .jumbotron{
+	position:relative;
+	color: #ffffff;
+	background-color: #a0e2e5;
+	width:65%;
+	margin: auto;
+	margin-bottom: 25px;
+	border-radius: 15px;
+	border:5px solid #337ab7;
+	font-family: 'Berkshire Swash', cursive;
 
-	background-color:  #a0e2e5;
+}
+.title:after{
 
+	color:#337ab7;
+	content: attr(data-descr);
+	left:19.7%;
+	position:absolute;
 }
 
 li:hover{
@@ -19,28 +33,93 @@ li:hover{
 }
 .list-group-item{
 	
-	background-color: #a0e2e5;
+	background-color: #337ab7;
 
 }
-.panel{
+.panel {
 	width:100%;
 	background-color: #a0e2e5;
+	
+	border:5px solid #337ab7;
 	border-radius: 15px;
-	border-color: transparent;
 	color:#2D414E;
 }
 .panel-heading{
 	color:#2D414E;
 	background-color: #a0e2e5;
-	border-radius: 15px 15px 0px 0px;
+	
 }
 
 #time{
 
 	float: right;
+	margin-right: 10px;
+	font-family: 'Bungee Shade', cursive;
+	color:#337ab7;
+	
 }
 body{
-
+	
+	background-image: url("../images/memphis-colorful.png");
 	text-align: center;
-	color:#2D414E;
+	color:#337ab7;
+	font-family: 'Cinzel', serif;
+	font-weight: bold;
+}
+#pushDown{
+
+	height:170px;
+}
+
+@media (min-width:768px){
+	.title:after{
+
+	color:#337ab7;
+	content: attr(data-descr);
+	left:1.7%;
+	bottom:59px;
+	position:absolute;
+}
+
+}
+@media (min-width:980px){
+	.title:after{
+
+	color:#337ab7;
+	content: attr(data-descr);
+	left:8.5%;
+	position:absolute;
+}
+
+}
+@media (min-width:1300px){
+	.title:after{
+
+	color:#337ab7;
+	content: attr(data-descr);
+	left:19.5%;
+	position:absolute;
+}
+
+}
+@media (max-width:640px){
+	
+	.title:after{
+
+	color:#337ab7;
+	content: attr(data-descr);
+	left:13.7%;
+	position:absolute;
+}
+
+}
+@media (max-width: 440px){
+	
+	.title:after{
+
+	color:#337ab7;
+	content: attr(data-descr);
+	left:8.7%;
+	position:absolute;
+
 }

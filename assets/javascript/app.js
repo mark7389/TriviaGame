@@ -182,7 +182,22 @@ function game(){
 
 
 }
-game();
+function start(){
+
+	var btn = $("<button>").addClass("btn btn-primary");
+	var gly = $("<div>").addClass("glyphicon glyphicon-play");
+	gly.appendTo(btn);
+	btn.on("click", function(){
+
+		game();
+		btn.hide();
+	});
+	btn.appendTo("#choices");
+
+
+}
+
+start();
 
 
 });
