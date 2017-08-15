@@ -2,15 +2,20 @@
 #choices{
 	
 	background-color: #2D414E;
-	color: #cccc33;
+	color: #14a509;
 	font-weight: bolder;
 	border:1px solid #a0e2e5;
 	border-top: none;
 }
+.jumbotron{
+
+	background-color:  #a0e2e5;
+
+}
 
 li:hover{
 
-	opacity: 0.6;
+	opacity: 0.3;
 }
 .list-group-item{
 	
@@ -18,13 +23,14 @@ li:hover{
 
 }
 .panel{
-
-	background-color:  #a0e2e5;
+	width:100%;
+	background-color: #a0e2e5;
 	border-radius: 15px;
 	border-color: transparent;
+	color:#2D414E;
 }
 .panel-heading{
-
+	color:#2D414E;
 	background-color: #a0e2e5;
 	border-radius: 15px 15px 0px 0px;
 }
@@ -36,4 +42,5 @@ li:hover{
 body{
 
 	text-align: center;
+	color:#2D414E;
 }

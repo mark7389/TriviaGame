@@ -70,7 +70,7 @@ function pick(){
 			stop();
 			var img = $("<img>").attr("src", questions[q].image);
 			$("#choices").html(img);
-			$("#choices").append("<h1>The Correct Answer Was: </h1>" + questions[q].correct);
+			$("#choices").append("<h1>The Correct Answer Was: " + questions[q].correct + "</h1>");
 			
 			setTimeout(clear, 2000);
 			setTimeout(generate, 2000);
@@ -90,9 +90,12 @@ function listChoices(i){
 function end(){
 
 		stop();
+		var newLine = $("<br><br>");
 		$("#choices").empty();
-		$("#choices").append("correct: " + correctA + " ");
-		$("#choices").append("incorrect: " + incorrect + "  ");
+		$("#choices").append("<p>" + "correct: " + correctA + "</p>");
+		$("#choices").append(newLine);
+		$("#choices").append("incorrect: " + incorrect);
+		$("#choices").append(newLine);
 		$("#choices").append(restart);
 
 }
@@ -138,13 +141,8 @@ function reset(){
 	$("#time").empty();
 
 }
-//message for win or lose
-function dispL(){
 
-	$("#choices").html("Oops")
 
-}
-//
 
 
 function count(){
@@ -156,10 +154,12 @@ function count(){
 		$("#choices").empty();
 		$("#time").html("times up!!");
 		time = 20;
-		timeout = setTimeout(generate, 4000);
-		
-		
-		
+		incorrect++;
+		var img = $("<img>").attr("src", questions[q].image);
+		$("#choices").html(img);
+		$("#choices").append("<h1>The Correct Answer Was: " + questions[q].correct + "</h1>");
+		setTimeout(clear, 2000);
+		setTimeout(generate, 2000);	
 	}
 	else{
 
