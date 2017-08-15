@@ -1,0 +1,39 @@
+
+#choices{
+	
+	background-color: #2D414E;
+	color: #cccc33;
+	font-weight: bolder;
+	border:1px solid #a0e2e5;
+	border-top: none;
+}
+
+li:hover{
+
+	opacity: 0.6;
+}
+.list-group-item{
+	
+	background-color: #a0e2e5;
+
+}
+.panel{
+
+	background-color:  #a0e2e5;
+	border-radius: 15px;
+	border-color: transparent;
+}
+.panel-heading{
+
+	background-color: #a0e2e5;
+	border-radius: 15px 15px 0px 0px;
+}
+
+#time{
+
+	float: right;
+}
+body{
+
+	text-align: center;
+}
